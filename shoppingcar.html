@@ -1,0 +1,134 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="关键字" />
+<meta name="description" content="描述内容" />
+<script src="js/jquery-1.7.2.js"></script>
+<link rel="styleSheet"   rev="styleSheet"  head="css/taobao.css" type="text/css"/>
+<title>淘宝3</title>
+<style>
+body{ background:#ededed;;margin:0;padding:0; width:100%;height:100%;overflow:hidden;}
+.head{
+  width: 100%;
+  height:50px;
+  background: #21292c;
+  line-height:50px;
+}
+.head .img_1 a{
+  display: inline-block;
+  width: 18%;
+  height: 28px;
+  background: url(images/1.jpg) no-repeat;
+  background-position: 10px 0px;
+  float:left;  position: relative;
+  left: 0px;
+  top: 7px;
+
+}
+.head .head_1{
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  width:63%;
+  text-align:center;
+  height:100%;line-height:280%;
+  font-family: "Microsoft YaHei";
+  
+}
+.head .head_2{text-decoration:none;font-family: "Microsoft YaHei";color:#ffffff;font-size:15px;  float: right;
+  margin-right: 25px;}
+  .content{ background:#fff;
+   width:100%;  height: 245px; overflow: hidden;}
+.content_1{height:33%;width:100%;  border-bottom: 2px solid #e9e9e9}
+.center{width:60%;height:76px;}
+.center_1{display:inline-block;;width:190px;height:200px;margin-top:6%; margin-left: 9px;}
+.center_2{display:inline-block;font-family: "Microsoft YaHei";  position: relative;     top: -188px; left: 80px;}
+.center_3{color:#3f3f3f;  font-size:15px;}
+.center_4{color:#a6a6a6;  font-size: 10px;  padding-top: 3px;}
+.center_5{height: 76px;
+  width: 128px;
+  color: #3f3f3f;
+  font-size: 15px;
+  font-family: "Microsoft YaHei";
+  position: relative;
+    top: -47px;
+  left: -13px;
+  float:right;}
+.center_6{color:#ff8000;  font-size: 10px;font-weight:bold;  margin-right: 15px;}
+.center_7{   font-size: 10px; width: 40px;outline: none;border:0;background:#eaeaea;text-align:center;height:25px;position:relative;top:0px;}
+b{font-weight:normal;  position: relative;
+  top: 2px;
+  left: 5px;  font-size: 15px;}
+  .center_1l{display:inline-block; width: 190px; height: 200px;  margin-top:6%;margin-left: 9px;}
+  .center_1ll{display:inline-block; width: 190px; height: 200px;margin-top:6%; margin-left: 9px;position: relative;
+  top: -7px;}
+  .foot{ background:#fff;width:100%;line-height:50px;font-family: "Microsoft YaHei";  text-indent: 21px;  position: absolute;
+  bottom: 0;}
+  .foot_1{color:#292929;  font-size: 15px;
+  position: relative;
+  top: 9px;}
+  .foot_2{color:#feb05d;font-weight:bold;  font-size: 15px;
+  position: relative;
+    top: 11px;}
+   .foot_3{  color: #fff;
+  font-weight: bold;
+  float: right;
+  line-height: 66px;
+  background: #ff9000;
+  font-size: 20px;
+  height: 100%;
+  width: 104px;
+  text-indent: 24px;}
+  
+</style>
+
+</head>
+<body>
+<div  class="head">
+ <span class="img_1"><a href="#"></a></span>
+ <span class="head_1">购物车</span>
+  <span class="head_2">清空</span>
+</div>
+<div class="content"> 
+<div class="content_1">
+<div class="center"><span class="center_1"><img src="images/12.jpg" /></span><span class="center_2"><div class="center_3">清洁用品</div><div class="center_4">￥300/ 套</div></span></div>
+<div class="center_5"><span class="center_6">￥300</span><input type="text" class="center_7" /><b>套</b></div>
+</div>
+
+<div class="content_1">
+<div class="center"><span class="center_1l"><img src="images/13.jpg" /></span><span class="center_2"><div class="center_3">洗漱用品</div><div class="center_4">￥150/ 套</div></span></div>
+<div class="center_5"><span class="center_6">￥300</span><input type="text" class="center_7" /><b>套</b></div>
+</div>
+
+
+<div class="content_1">
+<div class="center"><span class="center_1ll"><img src="images/14.jpg" /></span><span class="center_2"><div class="center_3">毛巾浴巾</div><div class="center_4">￥290/ 套</div></span></div>
+<div class="center_5"><span class="center_6">￥290</span><input type="text" class="center_7" /><b>套</b></div>
+</div>
+</div>
+<div class="foot">
+<span class="foot_1">合计：</span><span class="foot_2">￥890.00</span><span class="foot_3">去结算</span>
+</div>
+
+<script>
+$(function(){
+$('.head_2').click(function(){
+$('.content').css('display','none')
+$('.foot_1').css('display','none')
+$('.foot_2').css('display','none')
+$('.background').css({
+height:'72%',
+width:'100%',
+textAlign:'center',
+paddingTop:'20px'
+}).html('你当前没有任何订单')
+});
+})
+</script>
+</body>
+</html>

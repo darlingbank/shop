@@ -1,0 +1,369 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="关键字" />
+<meta name="description" content="描述内容" />
+<script src="js/jquery-1.7.2.js"></script>
+<link rel="styleSheet"   rev="styleSheet"  head="css/taobao.css" type="text/css"/>
+<title>淘宝5</title>
+<style>
+body{margin:0;padding:0;width:100%;}
+.head{
+  width: 100%;
+height:45px;
+  background: #21292c;
+  line-height:45px;
+}
+.head .img_1 a{
+  display: inline-block;
+  width: 20%;
+  height: 28px;
+  background: url(images/1.jpg) no-repeat;
+  background-position: 10px -5px;
+  float:left;  position: relative;
+  left: 10px;
+  top: 7px;
+
+}
+.head .head_1{
+  display: inline-block;
+  font-size: 17px;
+  color: #ffffff;
+  width: 54%;
+  font-family: "Microsoft YaHei";
+  text-align:center;
+  
+}
+.head .head_2 a{text-decoration:none;font-family: "Microsoft YaHei";color:#ffffff;font-size:15px;  float: right;
+  margin-right: 13px;}
+  .img{  width: 100%;
+  height: 265px;
+  border-bottom: 1px solid #ccc;
+}
+  .img_2{  width: 84%;
+  margin-left: 7%;
+  height: 239px;}
+  .content{   width: 100%;
+  height: 121px;
+  border-bottom: 3px solid #ebebeb;}
+  .content .content_1{ font-size: 15px;
+  margin-left: 7px;
+  margin-top: 18px;
+  color: #333;
+  font-family: "Microsoft YaHei";}
+   .content .content_2{  color: red;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 7px;}
+     .content .content_3{  color: red;
+  font-family: "Microsoft YaHei";
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 3px;}
+  
+    .content_4{   width: 100%;
+  height: 65px;
+   font-family: "Microsoft YaHei";
+  border-bottom: 1px solid #ebebeb;
+  line-height: 65px;}
+  .content_4 .span{    font-size: 17px;
+  color: #ccc;
+  margin-right: 12px;
+  margin-left: 9px;}
+  .content_4 .span1{  font-size: 15px;
+  margin-right: 14px;
+  color: #fff;
+  border-radius: 6px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  background: #fe0000;}
+    .content_4 .span2{  font-family: "Microsoft YaHei";
+  color: #333;
+  font-size: 15px;}
+	   .content_4 .span3{ 
+  color: #333;
+  font-size: 25px;
+  float: right;text-decoration:none;
+  margin-right: 8px;}
+   .content_4 .span1l{color:#333;font-family: "Microsoft YaHei"; font-size:17px}
+    .content_4 .span4{  font-size: 15px;
+  color: #333;
+  font-family: "Microsoft YaHei";
+  margin-left: 10px;
+  margin-right: 24px;
+}
+	 .content_4 .span5{  font-size: 15px;
+  color: red;
+  margin-right: 24px;}
+	  .content_4 .span6{font-size:15px;color:#ccc;}
+	  .content_5{  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height:95px;} 
+	  .content_5 .span10{  color: #757575;
+  font-size: 12px;
+  margin-left: 50px;
+  position: relative;
+  top: -11px;
+   white-space: nowrap;
+  overflow: hidden;
+    width: 60px;display:inline-block;}
+	    .content_5 .span11{  color: #757575;
+  font-size: 15px;
+  margin-left: 18px;
+  position: relative;
+  top: 8px;
+  float: right;
+   white-space: nowrap;
+  overflow: hidden;
+    width: 60px;
+}
+		 .content_5 .span12{  color: #333;
+  font-family: "Microsoft YaHei";
+  font-size: 13px;
+  margin-left: 8px;}
+		 .content_5  .div10{  margin-top: 9px;  white-space: nowrap;
+  overflow: hidden;}
+		  .content_5  img{  margin-left: 3px;}
+		  .content_6{  width: 320px;
+  height: 85px;
+  margin: 0 auto;}
+		  .content_6 .span13{  color: #ccc;
+  font-size: 15px;
+  display: inline-block;
+  width: 135px;
+  height: 39px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 10px;
+  margin-top: 20px;}
+		   .content_6 .span14{
+		   color: #ccc;
+  font-size: 15px;
+  display: inline-block;
+  width: 135px;
+  height: 39px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 39px;
+  margin-left: -9px;
+  position: relative;
+  left: 35px;}
+  .content_7{  border-top: 20px solid #ebebeb;
+  border-bottom: 20px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  width: 99%;
+  height: 275px;}
+  .content_7 .li{  color: #ccc;
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 20px;}
+    .content_8 ul{list-style:none;margin-left:-20px;}
+	  .content_8 ul li{ 
+  float:left;
+  font-size: 12px;
+  padding-top: 50px;
+    padding-right: 6px;
+  font-family: "Microsoft YaHei";}
+   .content_8 ul .li_1{background:url(images/47.jpg) no-repeat;  width: 64px;height: 40px;}
+      .content_8 ul .li_2{background:url(images/48.jpg) no-repeat;width: 64px;height: 40px;}
+	     .content_8 ul .li_3{background:url(images/49.jpg) no-repeat;width: 64px;height: 40px;}
+		    .content_8 ul .li_4{background:url(images/49.jpg) no-repeat;width: 64px;height: 40px;}
+			   .content_8 ul .li_5{background:url(images/74.jpg) no-repeat;width: 64px;height: 40px;}
+			      .content_8 ul .li_6{background:url(images/75.jpg) no-repeat;width: 64px;height: 40px;}
+				     .content_8 ul .li_7{background:url(images/76.jpg) no-repeat;width: 64px;height: 40px;}
+					    .content_8 ul .li_8{background:url(images/76.jpg) no-repeat;width: 64px;height: 40px;}
+	    .content_8 ul li a{margin-left: 10px;  text-decoration: none;
+  color: #333;}
+.content_9{width:100%;text-align:center;  height: 60px;
+  line-height: 60px;}
+.content_9 .span21{font-size:17px;color:#ccc;}
+.content_9  .span20{background:url(images/50.jpg) no-repeat;   width: 33px;
+  height: 26px;
+  display: inline-block;}
+  .content_10{
+    border-top: 20px solid #ebebeb;
+  width: 99%;
+   height: 235px;
+  border-right: 1px solid #ebebeb;
+  }
+      .content_10 ul{ list-style:none; margin: 15px auto;
+  width: 280px;}
+   .content_13{  position: relative;
+  top: -120px;display:none;
+  left: 2px;width:99%;height:45px;}
+     .content_13 ul{ margin-top:-80px; list-style: none;}
+	  .content_13 ul li a{text-decoration:none;color:#333;}
+	    .content_13 ul li{margin-top:30px;}
+	    .content_10 ul li{  float: left;
+  font-family: "Microsoft YaHei";
+  font-size: 13px;
+  padding-right: 40px;}
+		 .content_10 ul li{color:#333;}
+		  .content_10 ul .il{color:red;}
+		  .content_11{   position: relative;
+  top: 30px;
+  left: 2px;}
+  .content_11 a{  display: block;
+  height: 0px;}
+  .content_11 a img{ width:100%;height:207px;}
+     .content_12 ul{list-style: none;
+  margin-left: -58px;margin-top:0;}
+	 .content_12{width: 100%;
+  margin-top: 36px;border-top:1px solid #ccc;}
+	     .content_12 ul li{ margin-top:0; border-right: 1px solid #ebebeb;
+  float: left;
+  font-family: "Microsoft YaHei";
+  font-size: 15px;
+  width: 34%;
+  height: 75px;
+  text-align: center;
+  line-height: 65px;}
+		 		 .content_12 ul li a{text-decoration:none;color:#333;}
+				 .content_12 ul #aa{  width: 31%;background:#ff9000;font-weight:bold;font-size:17px;line-height: 75px;}
+				  .content_12 ul #aa a{color:#fff;}
+				  .content_12 ul .a1{background:url(images/52.jpg) no-repeat;  background-position:51% 16%;}
+				   .content_12 ul .a1 a{position:relative;top: 23px;}
+				    .content_12 ul .a2 a{   position: relative;
+  top: 23px;}
+				    .content_12 ul .a2{background:url(images/53.jpg) no-repeat;  background-position: 51% 14%;}
+					.content_14{position: relative;
+  top: -149px;
+  left: 62px;
+  width: 65%;
+  height: 0;display:none;}
+</style>
+
+</head>
+<body>
+<div  class="head">
+ <span class="img_1"><a href="#"></a></span>
+ <span class="head_1">商品介绍</span>
+  <span class="head_2"><a href="#">浏览记录</a></span>
+</div>
+<div class="img"><div class="img_2"><img src="images/44.jpg" /></div></div>
+<div class="content">
+<div class="content_1">代尔塔102106豪华透气M型ABS安全帽工地防砸领导防护工作帽免费印字 红色</div>
+<div class="content_2">一级代理一顶起免费印字</div>
+<div class="content_3">￥35.00</div>
+</div>
+<div class="content_4"><span class="span">促销</span><span class="span1">优惠套餐</span><span class="span2">最高优惠1.00元</span><a class="span3"href="#">><a/></div>
+<div class="content_4"><span class="span">已选</span><span class="span1l">红色</span><span class="span2" style="  margin-left: 23px;">1件</span><a class="span3" href="#">></a></div>
+<div class="content_4" style="  height: 170px;">
+<div class="div"><span class="span">送至</span><span class="span1l">广东 > 深圳市 > 宝安区</span><span class="span2"style="  position: absolute;color: red;margin-top: 9%;left: 54px;">有货</span></div>
+<div  class="div1" style="margin-top: 5px;"><span class="span">运费</span><span class="span1l" style="font-size:16px;">店铺单笔订单不满48元，收运费9元</span></div>
+<div  class="div2" style="margin-top: -32px;"><span class="span">提示</span><span class="span1l">支持7天无理由退货</span></div>
+</div>
+<div class="content_4" style="line-height:1px;border-bottom:1px solid #ccc"><div class="span" style="  margin-top: 35px; margin-bottom: 29px;">评价晒单</div><span class="span4">好评</span><span class="span5">100%</span><span class="span6">60人评论</span></div>
+<div class="content_5"><div class="div10"><img src="images/45.jpg" /><span class="span10">XXXXX*XX</span><span class="span11">2015-7-4</span></div>
+<div class="span12">安全帽的颜色很正，做工手感好，质量好，性价比高，值得推荐。对客户的咨询回复非常神速。</div></div>
+
+<div class="content_5"><div class="div10"><img src="images/45.jpg" /><span class="span10">XXXXX*XX</span><span class="span11">2015-7-4</span></div>
+<div class="span12">安全帽的颜色很正，做工手感好，质量好，性价比高，值得推荐。对客户的咨询回复非常神速<span class="none">...</span><span class="display" style="display:none;">很好，快来啊</span></div><img src="images/46.jpg" style="position: relative;  top: -10px; float: right; margin-right: 3px;" class="block"/></div>
+
+<div class="content_5"><div class="div10"><img src="images/45.jpg" /><span class="span10">XXXXX*XX</span><span class="span11">2015-7-4</span></div>
+<div class="span12">安全帽的颜色很正，做工手感好，质量好，性价比高，值得推荐。对客户的咨询回复非常神速<span class="nonel">...</span><span class="displayl" style="display:none;">很好，快来啊</span></div><img src="images/46.jpg" style="position: relative;  top: -10px; float: right; margin-right: 3px;" class="blockl"/></div>
+<div class="content_6"><span class="span13">有图评价（37）</span><span class="span14">购买咨询</span></div>
+<div class="content_7">
+<div class="li">猜你喜欢</div>
+<div class="content_8">
+<ul>
+<li class="li_1"><a href="#">安全帽</a></li>
+<li class="li_2"><a href="#">工作帽</a></li>
+<li class="li_3"><a href="#" style="margin-left:0;">安全眼镜</a></li>
+<li class="li_4"><a href="#"style="margin-left:0;">安全眼镜</a></li>
+<li class="li_5"><a href="#">安全带</a></li>
+<li class="li_6"><a href="#">连接器</a></li>
+<li class="li_7"><a href="#"style="margin-left:0;">防护眼袋</a></li>
+<li class="li_8"><a href="#"style="margin-left:0;">防护眼袋</a></li>
+</ul>
+</div>
+</div>
+<div class="content_9"><span class="span20"></span><span class="span21">上拉查看图文详情</span></div>
+<div class="content_10">
+<ul>
+<li class="il">商品介绍</li>
+<li class="il1">规格参数</li>
+<li class="il2">包装售后</li>
+</ul>
+<div class="content_11"><a href=""><img src="images/51.jpg" /></a></div>
+</div>
+<div class="content_13">
+<ul><li><a href="#">品牌:</a></li>
+<li><a href="#">颜色分类:</a></li>
+<li><a href="#">货号:</a></li>
+</ul>
+</div>
+<div class="content_14"><img src="images/70.jpg" /></div>
+<div class="content_12">
+<ul>
+<li class="a1"><a href="#">关注</a></li>
+<li class="a2"><a href="#">购物车</a></li>
+<li id="aa"><a href="#">加入购物车</a></li>
+</ul>
+</div>
+
+<script>
+$(function(){
+$('.content_9').click(function(){
+$('.content_7').slideToggle('slow');
+})
+})
+$(function(){
+$('.content_9').toggle(function(){
+$('.span20').css('background','url(images/73.jpg) no-repeat 10px 8px')},
+function(){$('.span20').css('background','url(images/50.jpg) 2px 0')}
+);
+$('.block').toggle(function(){
+$('.display').css('display','block').css('display','inline'),
+$('.none').css('display','none')
+},function(){$('.display').css('display','none'),
+$('.none').css('display','block').css('display','inline')})
+
+$('.blockl').toggle(function(){
+$('.displayl').css('display','block').css('display','inline'),
+$('.nonel').css('display','none')
+},function(){$('.displayl').css('display','none'),
+$('.nonel').css('display','block').css('display','inline')})
+
+$('.il').click(function(){
+$('.content_13').css('display','none')
+$('.content_14').css('display','none')
+$('.content_11').css('display','block')
+$('.il').css('color','red')
+$('.il1').css('color','#333')
+$('.il2').css('color','#333')
+});
+
+$('.il1').click(function(){
+$('.content_11').css('display','none')
+$('.content_14').css('display','none')
+$('.content_13').css('display','block')
+$('.il1').css('color','red')
+$('.il').css('color','#333')
+$('.il2').css('color','#333')
+});
+
+$('.il2').click(function(){
+$('.content_13').css('display','none')
+$('.content_11').css('display','none')
+$('.content_14').css('display','block')
+$('.il2').css('color','red')
+$('.il1').css('color','#333')
+$('.il').css('color','#333')
+});
+})
+</script>
+</body>
+</html>
